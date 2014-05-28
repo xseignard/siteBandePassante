@@ -1,6 +1,9 @@
 var gulp = require('gulp'),
 	rimraf = require('rimraf'),
 	usemin = require('gulp-usemin'),
+	uglify = require('gulp-uglify');
+	minifyHtml = require('gulp-minify-html');
+	minifyCss = require('gulp-minify-css');
 	imagemin = require('gulp-imagemin'),
 	refresh = require('gulp-livereload'),
 	gutil = require('gulp-util'),
@@ -50,7 +53,11 @@ gulp.task('open', function() {
 // minify css, js, html
 gulp.task('usemin', function(){
 	gulp.src(src.index)
-		.pipe(usemin())
+		.pipe(usemin({
+			css: [minifyCss(), 'concat'],
+			html: [minifyHtml({empty: true})],
+			js: [uglify()]
+		}))
 		.pipe(gulp.dest(dest.folder))
 		.pipe(refresh(server));
 });
