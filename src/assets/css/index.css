@@ -204,12 +204,10 @@ a:focus {
     transform: scale(1);
   }
 }
-.content-section {
-  padding-top: 100px;
-}
-.download-section {
+
+.authors-section {
   width: 100%;
-  padding: 50px 0;
+  padding: 60px 0;
   color: #fff;
   background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
   background-color: #000;
@@ -218,14 +216,10 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
-@media (min-width: 767px) {
-  .content-section {
-    padding-top: 250px;
-  }
-  .download-section {
-    padding: 100px 0;
-  }
+.content-section {
+  padding-top: 60px;
 }
+
 .btn {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -233,6 +227,7 @@ a:focus {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 10px;
 }
 .btn-default {
   border: 1px solid #9e371e;
@@ -252,6 +247,10 @@ a:focus {
 }
 .banner-social-buttons {
   margin-top: 0;
+}
+
+.network-name {
+  font-size: 15px;
 }
 @media (max-width: 1199px) {
   ul.banner-social-buttons {
