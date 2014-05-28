@@ -1,0 +1,28 @@
+{
+  "name": "siteBandePassante",
+  "version": "0.0.1",
+  "description": "site web du projet bande passante",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xseignard/siteBandePassante.git"
+  },
+  "author": "xseignard <xavier.seignard@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xseignard/siteBandePassante/issues"
+  },
+  "homepage": "https://github.com/xseignard/siteBandePassante",
+  "devDependencies": {
+    "body-parser": "^1.2.2",
+    "express": "^4.3.1",
+    "gulp": "^3.6.2",
+    "gulp-imagemin": "^0.5.0",
+    "gulp-jshint": "^1.6.1",
+    "gulp-livereload": "^1.5.0",
+    "gulp-usemin": "^0.3.4",
+    "gulp-util": "^2.2.14",
+    "open": "0.0.5",
+    "rimraf": "^2.2.8",
+    "tiny-lr": "0.0.7"
+  }
+}
