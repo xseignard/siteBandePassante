@@ -26,18 +26,18 @@ h2 {
 }
 p {
   margin: 0 0 25px;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.4;
 }
 @media (min-width: 767px) {
   p {
     margin: 0 0 35px;
-    font-size: 20px;
-    line-height: 1.6;
+    font-size: 18px;
+    line-height: 1.5;
   }
 }
 a {
-  color: #9e371e;
+  color: #fff;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -124,6 +124,7 @@ a:focus {
 }
 .brand-heading {
   font-size: 40px;
+  margin-bottom: 5px;
 }
 .intro-text {
   font-size: 18px;
@@ -216,6 +217,14 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
+.author-description {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.author-name {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .content-section {
   padding-top: 60px;
 }
@@ -230,16 +239,16 @@ a:focus {
   margin-bottom: 10px;
 }
 .btn-default {
-  border: 1px solid #9e371e;
-  color: #9e371e;
+  border: 1px solid #fff;
+  color: #fff;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #9e371e;
+  border: 1px solid #fff;
   outline: none;
   color: #000;
-  background-color: #9e371e;
+  background-color: #fff;
 }
 .btn-huge {
   padding: 25px;
@@ -285,4 +294,20 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+/* carousel */
+.item {
+  text-align: center;
+}
+.item > img {
+  display: inline !important;
+}
+.carousel-control {
+  background-image: none !important;
+}
+.carousel-control.left,
+.carousel-control.right {
+  top: 50%;
+  margin-top: -7px;
 }
