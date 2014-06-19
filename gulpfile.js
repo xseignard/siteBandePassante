@@ -77,6 +77,12 @@ gulp.task('fonts', function() {
 		.pipe(refresh(server));
 });
 
+// copy CNAME file
+gulp.task('CNAME', function() {
+	gulp.src('CNAME')
+		.pipe(gulp.dest(dest.folder));
+});
+
 // livereload server
 gulp.task('livereload', function(){
 	server.listen(35729, function(err){
@@ -95,7 +101,7 @@ gulp.task('lint', function() {
 gulp.task('default', function() {
 	rimraf(dest.folder, function() {
 		//rimraf(tmp, function() {
-			gulp.run('img', 'usemin', 'fonts', 'server', 'livereload', 'open');
+			gulp.run('img', 'usemin', 'fonts', 'CNAME', 'server', 'livereload', 'open');
 		//});
 	});
 
