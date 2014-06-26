@@ -86,6 +86,9 @@ a:focus {
 .navbar-toggle:active {
   outline: none;
 }
+.navbar-logo {
+  height: 20px;
+}
 @media (min-width: 767px) {
   .navbar {
     padding: 20px 0;
@@ -210,7 +213,7 @@ a:focus {
   width: 100%;
   padding: 60px 0;
   color: #fff;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+  background: url(../img/authors-bg.jpg) no-repeat center center scroll;
   background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -264,6 +267,9 @@ a:focus {
 .network-name {
   font-size: 15px;
 }
+.stereolux {
+  font-size: 10px;
+}
 @media (max-width: 1199px) {
   ul.banner-social-buttons {
     margin-top: 15px;
@@ -313,4 +319,15 @@ body {
 .carousel-control.right {
   top: 50%;
   margin-top: -7px;
+  opacity: .7;
+  color: #000;
+}
+.carousel-control.left > span {
+  margin-right: 60%;
+}
+.carousel-control.right > span {
+  margin-left: 60%;
+}
+.carousel-indicators li {
+  border-color: #444 !important;
 }
