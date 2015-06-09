@@ -326,7 +326,7 @@ body {
   top: 50%;
   margin-top: -7px;
   opacity: .7;
-  color: #000;
+  color: #ddd;
 }
 .carousel-control.left > span {
   margin-right: 60%;
