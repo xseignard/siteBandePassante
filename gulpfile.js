@@ -56,7 +56,8 @@ gulp.task('usemin', function(){
 		.pipe(usemin({
 			css: [minifyCss(), 'concat'],
 			html: [minifyHtml({empty: true})],
-			js: [uglify()]
+			vendor: [uglify()],
+			app: [uglify()]
 		}))
 		.pipe(gulp.dest(dest.folder))
 		.pipe(refresh(server));
